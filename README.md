@@ -22,6 +22,6 @@ How to use
 To train a classification model, run extract_plots_from_audio and then train_model. To test a trained model, run test_model.
 
 Downlaod dataset
-https://drive.google.com/file/d/1-uEwkkqqUfV-UJWoPZLBkGypBQHbEkt-/view?usp=sharing
+https://drive.google.com/drive/folders/1bs2IappVX57XHlos9ZIL_lsL6AXG4-8p?usp=sharing
 
 Please put the download dataset inside the dataset folder.
