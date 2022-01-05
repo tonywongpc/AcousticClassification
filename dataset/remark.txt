@@ -1,0 +1,1 @@
+This folder store dataset for training ML model. Each dataset contains "data" and "plot_mfcc" directories. "data" directory includes wave files stored in folders with corresponding class name. "plot_mfcc" directory includes MFCC images extracted from VGG-19 model and stored in folders with corresponding class name. 
