@@ -1,0 +1,15 @@
+This folder contains models for acoustic textile recognition.
+
+No.	Model name		class
+----	------------------	-------------------------------------------------------
+1	mfcc_6texture		cotton, foam, nylon, linen, polyester, cardboard, rest
+2	mfcc_bag		lid open, zip open, zip close, tap on lid, rest
+3	mfcc_cardboard_gesture	swipe, circle, triangle, rub
+4	mfcc_cotton_gesture	swipe, circle, triangle, rub
+5	mfcc_foam_gesture	swipe, circle, triangle, rub
+6	mfcc_linen_gesture	swipe, circle, triangle, rub
+7	mfcc_nylon_gesture	swipe, circle, triangle, rub
+8	mfcc_polyester_gesture	swipe, circle, triangle, rub
+9	mfcc_TGR_texture	cotton, foam, nylon, linen, polyester, cardboard
+
+3-9 are used for texture-gesture recongnition. 9 is responsible for detecting 6 texture, 3-8 are responsible for detecting 4 gestures.
