@@ -1,0 +1,1 @@
+This directory contain MFCC image extracted for real-time recognition.
