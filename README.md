@@ -2,14 +2,15 @@
 
 This repository contains dataset and code for classifying input on textiles.
 
-Dataset contains 60 samples per class and each sample is a 1.4s recording of the sound generated when swiping on textiles. I extracted MFCC (Mel-frequency cepstral coefficients) images for each sample. I then used a pre-trained model of VGG-19 and extracted abstract features of the MFCC image from the flatten layer. After extracting these features, I created a 70–30 train test split and trained a LinearSVM for classification.
+Dataset contains 60 samples per class and each sample is a 1.4s recording of the sound generated when swiping on textiles. I extracted MFCC (Mel-frequency cepstral coefficients) images for each sample and then used a pre-trained model of VGG-19 and extracted abstract features of the MFCC image from the flatten layer. After extracting these features, a 70–30 train test split is done and used to train a LinearSVM for classification.
 
-Texture recognition includes 6 classes : cardboard, cotton, foam, linen, nylon, polyester, and rest
-Interaction recognition of a waist bag include  classes: open lid, tap on lid, close zip, open zip, and rest
-Texture Gesture Recognition (TGR) includes classes of 6 textures (cotton, foam, nylon, linen, polyester, cardboard) and 4 gestures (swipe, circle, triangle, rub).
+Three recognition condition
+(1) Texture recognition includes 6 classes : cardboard, cotton, foam, linen, nylon, polyester, and rest
+(2) Interaction recognition of a waist bag include  classes: open lid, tap on lid, close zip, open zip, and rest
+(3) Texture Gesture Recognition (TGR) includes classes of 6 textures (cotton, foam, nylon, linen, polyester, cardboard) and 4 gestures (swipe, circle, triangle, rub).
 
-Functions
-The main.py contains three functions
+**Train a model**
+train.py contains three functions
 
 extract_plots_from_audio extracts waveform and MFCC plots from audio files in the dataset and store the plots.
 dataset name name of dataset.
