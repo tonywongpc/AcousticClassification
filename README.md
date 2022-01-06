@@ -4,10 +4,10 @@ This repository contains dataset and code for classifying input on textiles.
 
 Dataset contains 60 samples per class and each sample is a 1.4s recording of the sound generated when swiping on textiles. I extracted MFCC (Mel-frequency cepstral coefficients) images for each sample and then used a pre-trained model of VGG-19 and extracted abstract features of the MFCC image from the flatten layer. After extracting these features, a 70–30 train test split is done and used to train a LinearSVM for classification.
 
-Three recognition condition
-(1) Texture recognition includes 6 classes : cardboard, cotton, foam, linen, nylon, polyester, and rest
-(2) Interaction recognition of a waist bag include  classes: open lid, tap on lid, close zip, open zip, and rest
-(3) Texture Gesture Recognition (TGR) includes classes of 6 textures (cotton, foam, nylon, linen, polyester, cardboard) and 4 gestures (swipe, circle, triangle, rub).
+Three recognition conditions:
+1. Texture recognition includes 6 classes : cardboard, cotton, foam, linen, nylon, polyester, and rest
+2. Interaction recognition of a waist bag include  classes: open lid, tap on lid, close zip, open zip, and rest
+3. Texture Gesture Recognition (TGR) includes classes of 6 textures (cotton, foam, nylon, linen, polyester, cardboard) and 4 gestures (swipe, circle, triangle, rub).
 
 `constant.py` contains parameters for configuation (e.g. path to save recording sample, path of dataset, class name). 
 - `Mode` mode of classification, value: Texture, Bag, TGR 
