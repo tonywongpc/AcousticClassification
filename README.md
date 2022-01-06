@@ -15,12 +15,12 @@ Three recognition conditions:
   - `Bag` Interaction recognition of a waist bag
   - `TGR` Texture Gesture Recognition 
 
-**Record your own sample**
+### Record your own sample ###
 
 In `constant.py`, set your own class name as values of `LABEL` and set the keyboard key to trigger recording of corresponding class in `INPUT_KEYS`.
 Run `run_specgram.py` to start a real-time specgram and press the keyboard key set to start recording a sample. Recorded samples are stored in `recorded_data` folder.
 
-**Train a model**
+### Train a model ###
 
 `train.py` contains three functions
 
@@ -35,11 +35,11 @@ Run `run_specgram.py` to start a real-time specgram and press the keyboard key s
 To train a classification model, run `extract_plots_from_audio` and then `train_model`. To test a trained model, run `test_model`.
 
 Downlaod dataset
-https://drive.google.com/drive/folders/1bs2IappVX57XHlos9ZIL_lsL6AXG4-8p?usp=sharing
+https://drive.google.com/drive/folders/1bs2IappVX57XHlos9ZIL_lsL6AXG4-8p
 
 Please put the download dataset inside the dataset folder.
 
-**Run real-time recognition**
+### Run real-time recognition ###
 
 In `constant.py`, set the path ofclassification model in `MODEL_PATH` and the corresponding class name of the model in `CLASS_NAME`. Run `run_specgram.py` to start a real-time specgram and press SPACEBAR to trigger recognition. The predicted result will be shown on the specgram. 
 
